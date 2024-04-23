@@ -1,0 +1,11 @@
+# How to generate documentation site
+# docker run -ti --rm -w /content -v $(pwd):/content docker.io/spotify/techdocs:latest build
+site_name: 'Backstage Documentation'
+docs_dir: doc
+nav:
+  - Home: index.md
+  - Getting Started: gettingStarted.md
+  - Configuration: configuration.md
+  - TechDocs:
+    - Introduction: techdocs/techDocs.md
+    - Standalone documentation: techdocs/standaloneDocumentation.md
